@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html data-bs-theme="dark" lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,18 +15,19 @@
       }
     </style>
   </head>
-  <body>
-    <div class="container text-center">
+  <body class="text-center">
+    <header>
       <h1 class="title">Random Number Generator</h1>
-      <div class="input-container">
-        <label class="input-label">Minimum:</label>
-        <input type="number" id="minNumber" class="number-input" min="0" step="1" value="1">
-        <br id="first">
-        <label class="input-label">Maximum:</label>
-        <input type="number" id="maxNumber" class="number-input" min="0" step="1" value="18">
-      </div>
-      <button id="generateButton" class="generate-button">Generate Random Number</button>
-      <div id="numberDisplay" class="number-display"></div>
+    </header>
+    <div class="container text-center">
+        <div class="input-container">
+          <label class="input-label">Minimum:</label>
+          <input type="number" id="minNumber" class="number-input" min="0" step="1" value="1">
+          <br id="first">
+          <label class="input-label">Maximum:</label>
+          <input type="number" id="maxNumber" class="number-input" min="0" step="1" value="18">
+        </div>
+        <button id="generateButton" class="generate-button">Generate Random Number</button>
     </div>
     <script src="sketch.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
